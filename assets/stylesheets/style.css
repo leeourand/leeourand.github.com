@@ -35,16 +35,30 @@ body {
 }
 
 .articles ul li {
-  padding: 15px;
+  padding: 10px;
   margin: 0;
   border-top: 1px solid #EEE;
   clear: both;
+}
+
+.articles ul li:after {
+  display: block;
+  clear: both;
+  visibility: hidden;
+  content: "";
+  height: 0;
+}
+
+.articles ul li:hover {
+  background: #FFFBEF;
 }
 
 .articles ul li span.date {
   float: right;
   color: #AAA;
   text-align: right;
+  text-transform: uppercase;
+  font-size: 0.7em
 }
 
 .articles ul li span.title {
@@ -129,6 +143,12 @@ body {
 #article ul li {
   padding: 0;
   margin: 10px 1em;
+}
+
+#footer {
+  clear: both;
+  margin-top: 20px;
+  text-align: right;
 }
 
 a:link {
