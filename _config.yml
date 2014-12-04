@@ -1,3 +1,2 @@
-pygments: true
-auto: true
+highlighter: pygments
 permalink: /:year/:month/:day/:title
