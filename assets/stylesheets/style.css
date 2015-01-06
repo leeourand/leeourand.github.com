@@ -9,6 +9,7 @@ body {
   min-width: 414px;
   padding: 10px;
   margin: 0 auto;
+  font-size: medium;
 }
 
 #heading {
@@ -119,13 +120,21 @@ body {
 #article {
   clear: both;
   color: #555;
-  line-height: 1.4em;
-  font-size: 1.2em;
+  line-height: 1.9rem;
+  font-size: 1.4rem;
 }
 
 #article h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   margin-bottom: 5px;
   color: #000;
+}
+
+#article h2 {
+  line-height: 2.0rem;
+  margin-top: 0;
+  font-size: 2.0rem;
 }
 
 #article div.when {
