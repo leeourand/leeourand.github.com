@@ -158,6 +158,17 @@ body {
   clear: both;
   margin-top: 20px;
   text-align: right;
+  padding: 30px 0;
+  border-top: 1px solid #CCC;
+}
+
+#footer a.extra {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+
+#footer a.extra:last-child {
+  margin: 0;
 }
 
 a:link {
