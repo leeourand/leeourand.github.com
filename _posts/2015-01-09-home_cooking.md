@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Home Cooking"
+categories:
+  - cooking
 ---
 
 So the start of the new year is upon us. As is expected, I'm hearing a lot of the usual New Year's resolutions: "I want to lose weight", "I want to save money", "I want to eat healthier", etc. It just so happens that there is a pretty easy solution to these things: cook your own food, you heathen!
