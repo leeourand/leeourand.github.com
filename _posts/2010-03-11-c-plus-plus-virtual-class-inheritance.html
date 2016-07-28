@@ -1,10 +1,10 @@
 ---
 layout: post
-title: C++ Virtual Class Inheritance 
+title: C++ Virtual Class Inheritance
 ---
 
 <p>
-	Virtual Class Inheritance is something many people (myself included) have a difficult time wrapping their heads around initially. It can be a useful tool, so I’m going to try to explain it a little bit here.
+	Virtual Class Inheritance is something some of us have a difficult time wrapping their heads around initially. It can be a useful tool, so I’m going to try to explain it a little bit here.
 </p>
 
 <p>
@@ -17,22 +17,22 @@ class Plant
 public:
   virtual ~Plant();
   virtual Plant* clone() const = 0;
-	
+
   string getColor() const
   {
     return color;
   }
-	
+
   int getHeight() const
   {
     return height;
   }
-	
+
   void grow(int n)
   {
     height = height + n;
   }
-	
+
   virtual bool isRipe() const = 0;
 
 protected:
@@ -46,7 +46,7 @@ protected:
 </p>
 
 <p>
-	You should also notice that the destructor is virtual. This is because there may be additional private members in the sub classes that this base class doesn&#8217;t know about. Not declaring the destructor as virtual would likely lead to memory leaks.</p> 
+	You should also notice that the destructor is virtual. This is because there may be additional private members in the sub classes that this base class doesn&#8217;t know about. Not declaring the destructor as virtual would likely lead to memory leaks.</p>
 <p>We can now start coming up with plants we&#8217;d like to put in our garden. For this example, I&#8217;ve created Carrot, Potato, and Eggplant classes. Each of these classes has a unique implementation of the <code>isRipe()</code> function.
 </p>
 
@@ -59,13 +59,13 @@ public:
     color = "Orange";
     height = 0;
   }
-	
+
   virtual bool isRipe() const
   {
     return height >= 10;
   }
 };
- 
+
 class Potato : public Plant
 {
   Potato()
@@ -73,13 +73,13 @@ class Potato : public Plant
     color = "Brown";
     height = 0;
   }
-	
+
   virtual bool isRipe() const
   {
     return height >= 7;
   }
 };
- 
+
 class Eggplant : public Plant
 {
   Eggplant()
@@ -87,7 +87,7 @@ class Eggplant : public Plant
     color = "Purple";
     height = 0;
   }
-	
+
   virtual bool isRipe() const
   {
     return height >= 13;
@@ -97,7 +97,7 @@ class Eggplant : public Plant
 
 <p>
 	Nothing too fancy here, but you can see that each class has a different (albeit simple) way of checking if the plant is ripe.
-</p> 
+</p>
 
 
 <p>
@@ -113,7 +113,7 @@ public:
   {
     plants.push_back(p)
   }
-	
+
   harvest()
   {
     for(int i=0; i<fplants.size(); i++)
@@ -124,10 +124,10 @@ public:
       }
     }
   }
- 
+
 private:
   vector<*Plant> plants;
 };
 {% endhighlight %}
 
-<p>And there you have it. We have a very simple, and fairly useless e-garden. I&#8217;ll leave it up to you to code the army of slugs and snails to destroy it. Oh, and be sure to make a virtual class gastropod.</p> 
+<p>And there you have it. We have a very simple, and fairly useless e-garden. I&#8217;ll leave it up to you to code the army of slugs and snails to destroy it. Bring on the Gastropods!</p>
