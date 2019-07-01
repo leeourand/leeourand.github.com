@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Kick Your Lazier Self's Butt"
+title: "Kick Your Lazier Self&rsquo;s Butt"
 ---
 
 Like any other human, sometimes I feel lazy. Or unmotivated. Or I lack discipline. I've found a way to conquer these feelings: I imagine sharing my body with a lazier version of myself, and I routinely piss him off by not doing what he wants. When my lazy alter ego thinks "you should take

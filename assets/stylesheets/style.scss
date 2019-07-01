@@ -1,10 +1,12 @@
+---
+---
+
 html {
-  background: url('bg-pattern.gif') top center repeat-x;
-  background-size: 256px 10px;
   padding-top: 10px;
 }
+
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Cutive Mono', monospace;
   max-width: 800px;
   min-width: 414px;
   padding: 10px;
@@ -12,15 +14,10 @@ body {
 }
 
 #heading {
-  margin-top: 15px;
-}
-
-#heading:after {
-  content: " ";
-  clear: both;
-  display: block;
-  height: 0;
-  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 2px dashed #AAA;
 }
 
 #primary {
@@ -37,69 +34,65 @@ body {
 .articles ul li {
   padding: 15px;
   margin: 0;
-  border-top: 1px solid #EEE;
-  clear: both;
+  border-bottom: 1px solid #EEE;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .articles ul li span.date {
-  float: right;
   color: #AAA;
   text-align: right;
 }
 
 .articles ul li span.title {
-  float: left;
+  flex-grow: 2;
 }
 
 .articles ul li span.title a {
-  display: block;
-  color: #267EF2;
   text-decoration: none;
   line-height: 1.4em;
 }
 
-.articles ul li span.title a:hover {
-  text-decoration: underline;
-}
-
 #profile {
-  float: left;
-  display: inline-block;
+  flex-grow: 2;
 }
 
-#profile img {
-  width: 100px;
+#profile h1 {
+  font-family: 'Caveat Brush', cursive;
+  text-transform: capitalize;
+  font-size: 32px;
+  margin-top: 0;
 }
 
-#navigation {
-  float: left;
-  margin-top: 33px;
-  margin-left: 10px;
-  padding: 5px;
-  color: #FFF;
-  background: #000;
+#profile h1 a {
+  border-bottom: 0;
 }
 
 #navigation ul {
+  margin-top: 0;
   list-style: none;
-  margin: 3px 0 0;
   padding: 0;
 }
 
 #navigation ul li {
   display: inline-block;
   padding: 5px;
-  margin: 5px 5px 5px 0;
+  margin: 0 5px 5px 0;
 }
 
 #navigation ul li a {
-  color: #FFF;
+  font-family: 'Caveat Brush', cursive;
+  text-transform: capitalize;
+  border-bottom-width: 0;
+  color: #000;
   text-decoration: none;
-  font-size: 19px;
+  font-size: 23px;
 }
 
 #navigation ul li a:hover {
-  color: #267EF2;
+  color: #678;
 }
 
 #article {
@@ -112,6 +105,7 @@ body {
 #article h1 {
   margin-bottom: 5px;
   color: #000;
+  font-family: 'Caveat Brush', cursive;
 }
 
 #article div.when {
@@ -131,16 +125,24 @@ body {
   margin: 10px 1em;
 }
 
+#footer {
+  margin: 20px -10px 0 -10px;
+  background-color: rgba(0, 0, 0, 0.0588235);
+  padding: 10px;
+}
+
 a:link {
-  color: #267EF2;
+  color: #000;
+  border-bottom: 1px dashed #333;
+  text-decoration: none;
 }
 
 a:visited {
-  color: #1C70E5;
+  color: #000;
 }
 
 a:hover {
-  color: #267EF2;
+  color: #678;
   text-decoration: none;
 }
 
