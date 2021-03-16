@@ -2,31 +2,18 @@
 <html>
   <head>
     <title>Lee Ourand: {{ page.title }}</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/assets/stylesheets/style.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Cutive+Mono|Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind-dark.min.css" rel="stylesheet">
+
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
   </head>
-  <body>
-    <div id="heading">
-      <div id="profile">
-        <h1><a href="/">Lee Ourand</a></h1>
-      </div>
-      <div id="navigation">
-        <ul>
-          <li><a href="/about">About</a></li>
-          <li><a href="/">Articles</a></li>
-          <li><a href="/reading">Reading</a></li>
-          <li><a href="/goals">Goals</a></li>
-        </ul>
-      </div>
-    </div>
-    <div id="primary">
+  <body class="container mx-auto my-6 dark:bg-gray-900">
+    <h1 class="text-2xl font-bold font-sans dark:text-gray-50"><a href="/">Lee Ourand</a></h1>
+    <article class="mt-10">
       {{ content }}
-    </div>
-    <div id="footer">
-      <a class="extra"href="http://twitter.com/leeourand">@leeourand</a>
-      /
-      <a class="extra" href="mailto: &#108;&#101;&#101;&#064;&#108;&#101;&#101;&#111;&#117;&#114;&#097;&#110;&#100;&#046;&#099;&#111;&#109;">Say Hi!</a>
-    </div>
+    </article>
   </body>
 </html>
