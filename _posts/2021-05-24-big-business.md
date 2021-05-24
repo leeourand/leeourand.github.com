@@ -7,19 +7,20 @@ subtitle: "Big Business"
 - [HappyGastropod, LLC](https://happygastropod.com) is officially a thing. I've
   been using the name HappyGastropod since 2008. Thirteen years later, we're
   officially in business! I've been working on a little bulletin-board software
-  called [Cafayo](https://cafayo.com) that prompted the move start a company.
+  called [Cafayo](https://cafayo.com) that prompted the move to start a company.
   I've always loved the name HappyGastropod, and loved the goofy logo I made
   all those years ago:
   <img src="https://happygastropod.com/images/logo.png" width=200 class="m-auto bg-yellow-200 p-3 rounded-lg">
   This thing remains a nights-and-weekends type of project. It's been a fun
   learning experience thus far, and I'm excited by the possibilities.
-- Cafayo has been built using some [Hotwire](https://hotwire.dev) techniques.
-  It's an absolute delight to build apps this way. It's so refreshing, having
-  spent the past few years writing in the flavor-of-the-month single-page-app
-  framework for work. Hotwire is simple, fast, and (once you wrap your brain
-  around it) flexible. A shame about its whole relation to Basecamp...
-- After years of prodding by family and friends, I broke down and bought an
-  Xbox Series-S. I got it primarily to whip my brother's ass in the [MotoGP
+- I'm building Cafayo using some [Hotwire](https://hotwire.dev) libraries and
+  techniques.  It's an absolute delight to build apps this way. It's so
+  refreshing, having spent the past several years writing in the
+  flavor-of-the-month single-page-app framework for work. Hotwire is simple,
+  fast, and (once you wrap your brain around it) surprisingly flexible. A shame
+  about its whole relation to Basecamp...
+- After years of prodding by some family and friends, I broke down and bought
+  an Xbox Series-S. I got it primarily to whip my brother's ass in the [MotoGP
   Game](https://motogpvideogame.com). It's not going as planned, thus far. I
   have much practice to do.
 - Governor's Island is open to the public yet again. Cynthia and I went this
