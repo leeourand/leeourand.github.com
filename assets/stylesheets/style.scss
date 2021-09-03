@@ -1,41 +1,6 @@
 ---
 ---
 
-.content {
-  ul {
-    list-style-type: disc;
-  }
-
-  a:link, a:visited {
-    color: #1D4ED8;
-    text-decoration: underline;
-  }
-
-  a:hover {
-    color: #678;
-    text-decoration: underline;
-  }
-
-  a img {
-    border-color: transparent;
-    border-width: 0;
-  }
-
-  blockquote {
-    margin: 0;
-    padding: 0 1em;
-    border-left: 2px solid #AAA;
-  }
-}
-
-.dark {
-  .content {
-    a:link, a:visited {
-      color: #4F83F9;
-    }
-  }
-}
-
 $tmc: #fff;
 $tmc_b: #000;
 $tmc_k: rgb(231,125,60);
