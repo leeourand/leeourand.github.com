@@ -5,9 +5,9 @@ title: Articles
 
 <ul>
   {% for post in site.posts %}
-    <li class="mt-1">
+    <li class="mt-4">
       <h2 class="text-3xl font-bold font-serif dark:text-gray-50"><a class="hover:text-gray-500 dark:hover:text-gray-300" href="{{ post.url }}">{{ post.title }}: {{ post.subtitle}}</a></h2>
-      <time class="text-1xl uppercase dark:text-gray-400">{{ post.date | date: "%B %d %Y" }}</time>
+      <time class="text-1xl uppercase text-gray-400 dark:text-gray-400">{{ post.date | date: "%B %d %Y" }}</time>
     </li>
   {% endfor %}
 </ul>
