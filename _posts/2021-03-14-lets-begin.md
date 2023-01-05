@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Weeknotes 1"
+title: "Lifenotes 1"
 subtitle: "Let&rsquo;s Begin"
 ---
 
 - I recently stumbled upon [Tom Stuart's](https://tomstu.art) Weekly Notes, and
-  was inspired by the simplicity of keeping a weekly set of notes. So, let's
+  was inspired by the simplicity of keeping a ~~weekly~~ *occasional* set of notes. So, let's
   embrace the opportunity to start anew.
 - I wrapped up Jason Hickel&rsquo;s [Less is
   More](https://www.jasonhickel.org/less-is-more). It's is an excellent read

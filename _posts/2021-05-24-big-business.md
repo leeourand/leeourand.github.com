@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Weeknotes 3"
+title: "Lifenotes 3"
 subtitle: "Big Business"
 ---
 

@@ -5,19 +5,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/assets/stylesheets/style.css" rel="stylesheet" />
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.4.x/dist/typography.min.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+
     <link rel="alternate" type="application/atom+xml" title="leeourand.com" href="/feed.xml">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind-dark.min.css" rel="stylesheet">
 
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
   </head>
-  <body class="container mx-auto my-6 dark:bg-gray-900">
-    <div class="text-lg flex items-baseline">
-      <h1 class="text-2xl font-extrabold font-sans text-green-500 dark:text-gray-50"><a href="/">Lee Ourand</a></h1>
+  <body class="bg-gray-100 dark:bg-gray-900">
+    <header class="bg-green-400 dark:bg-green-600 px-5 py-3 font-sans text-white dark:text-gray-300 text-center">
+      <h1 class="text-2xl font-extrabold"><a href="/">lee.ourand.me</a></h1>
+      <nav class="font-semibold md:hidden">
+        <a class="hover:underline" href="/">Posts</a>
+        <a class="hover:underline" href="https://ruby.social/@leeourand">Mastodon</a>
+        <a class="hover:underline" href="https://github.com/leeourand">Github</a>
+      </nav>
+    </header>
+    <div class="container mx-auto my-6 grid grid-cols-[1fr_auto_1fr] grow gap-5">
+      <section class="mt-9 text-right text-xl text-gray-800 dark:text-gray-300">
+        <ul class="hidden md:block">
+          <li><a class="hover:underline" href="/">Posts</a></li>
+          <li><a class="hover:underline" href="https://ruby.social/@leeourand">Mastodon</a></li>
+          <li><a class="hover:underline" href="https://github.com/leeourand">Github</a></li>
+        </ul>
+      </section>
+      <article class="bg-white dark:bg-gray-700 border-2 p-5 border-gray-200 dark:border-gray-600 mt-3 w-full sm:w-auto">
+        {{ content }}
+      </article>
     </div>
-    <article class="mt-10">
-      {{ content }}
-    </article>
   </body>
 </html>

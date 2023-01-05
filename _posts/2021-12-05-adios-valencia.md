@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Weeknotes 5"
+title: "Lifenotes 5"
 subtitle: "Adios Valencia"
 ---
 - Welp, that 90 days went pretty quick. Our time in Spain has been quite

@@ -1,13 +1,13 @@
 ---
 layout: base
 ---
-<article class="grid grid-cols-2">
+<article class="grid grid-cols-[1fr_auto_1fr] grow gap-6">
   <header>
-    <h1 class="text-4xl font-bold font-serif dark:text-gray-100">{{ page.title }}</h1>
-    <h2 class="mt-2 text-3xl font-bold text-gray-600 font-serif dark:text-gray-500">{{ page.subtitle }}</h1>
-    <time class="block mt-2 text-1xl uppercase dark:text-gray-500">{{ page.date | date: "%B %d %Y" }}</time>
+    <time class="block mt-2 text-1xl uppercase dark:text-gray-400">{{ page.date | date: "%B %d %Y" }}</time>
+    <h1 class="text-4xl font-bold font-serif dark:text-gray-200">{{ page.title }}</h1>
+    <h2 class="mt-2 text-3xl font-bold text-gray-600 dark:text-gray-400 font-serif">{{ page.subtitle }}</h1>
   </header>
-  <div class="content max-w-lg dark:text-gray-300 prose prose-lg">
+  <div class="content prose prose-lg dark:prose-invert">
     {{ content }}
   </div>
 </article>
