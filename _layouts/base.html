@@ -3,7 +3,7 @@
   <head>
     <title>Lee Ourand: {{ page.title }}</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="/assets/stylesheets/style.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
 
@@ -20,15 +20,15 @@
         <a class="hover:underline" href="https://github.com/leeourand">Github</a>
       </nav>
     </header>
-    <div class="container mx-auto my-6 grid grid-cols-[1fr_auto_1fr] grow gap-5">
-      <section class="mt-9 text-right text-xl text-gray-800 dark:text-gray-300">
+    <div class="container sm:mx-auto sm:my-6 sm:grid sm:grid-cols-[1fr_auto_1fr] sm:grow sm:gap-5">
+      <section class="sm:mt-9 text-right text-xl text-gray-800 dark:text-gray-300">
         <ul class="hidden md:block">
           <li><a class="hover:underline" href="/">Posts</a></li>
           <li><a class="hover:underline" href="https://ruby.social/@leeourand">Mastodon</a></li>
           <li><a class="hover:underline" href="https://github.com/leeourand">Github</a></li>
         </ul>
       </section>
-      <article class="bg-white dark:bg-gray-700 border-2 p-5 border-gray-200 dark:border-gray-600 mt-3 w-full sm:w-auto">
+      <article class="bg-white dark:bg-gray-700 border-2 p-2 sm:p-5 border-gray-200 dark:border-gray-600 mt-3 sm:w-auto">
         {{ content }}
       </article>
     </div>
