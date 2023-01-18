@@ -14,21 +14,14 @@
   <body class="bg-gray-100 dark:bg-gray-900">
     <header class="bg-gradient-to-tr via-green-400 dark:via-green-700 from-lime-400 dark:from-lime-700 to-emerald-400 dark:to-emerald-700 px-5 py-3 font-sans text-white dark:text-gray-300 text-center">
       <h1 class="text-2xl font-extrabold"><a href="/">lee.ourand.me</a></h1>
-      <nav class="font-semibold md:hidden">
+      <nav class="font-semibold">
         <a class="bg-green-200 px-1 py rounded text-green-400" href="/">Posts</a>
         <a class="bg-green-200 px-1 py rounded text-green-400" rel="me" href="https://ruby.social/@leeourand">Mastodon</a>
         <a class="bg-green-200 px-1 py rounded text-green-400" href="https://github.com/leeourand">Github</a>
+        <a class="bg-green-200 px-1 py rounded text-green-400" href="/feed.xml">RSS</a>
       </nav>
     </header>
-    <div class="container sm:mx-auto sm:my-6 sm:grid sm:grid-cols-[1fr_auto_1fr] sm:grow sm:gap-5">
-      <section class="sm:mt-9 text-right text-xl text-gray-800 dark:text-gray-300">
-        <ul class="hidden md:block">
-          <li><a class="hover:underline" href="/">Posts</a></li>
-          <li><a rel="me" class="hover:underline" href="https://ruby.social/@leeourand">Mastodon</a>
-          <li><a class="hover:underline" href="https://github.com/leeourand">Github</a></li>
-          <li><a class="hover:underline" href="/feed.xml">RSS</a></li>
-        </ul>
-      </section>
+    <div class="container max-w-3xl sm:mx-auto sm:my-6">
       <article class="bg-white dark:bg-gray-700 border-2 p-2 sm:p-5 border-gray-200 dark:border-gray-600 mt-3 sm:w-auto">
         {{ content }}
       </article>
