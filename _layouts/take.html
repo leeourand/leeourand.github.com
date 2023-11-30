@@ -1,0 +1,12 @@
+---
+layout: base
+---
+<section class="mx-auto mt-4 max-w-sm py-2">
+  <img src="/assets/images/profile.jpeg" class="float-left w-16 mr-2 shadow rounded-lg" />
+  <div class="text-lg text-gray-800 dark:text-gray-200">
+    {{ page.content }}
+  </div>
+  <time class="block text-sm uppercase dark:text-teal-300 text-teal-700 text-right">
+    {{ page.date | date: "%B %d, %Y" }}
+  </time>
+</section>

@@ -1,4 +1,5 @@
 ---
+category: Posts
 layout: post
 title: "Lifenotes 1"
 subtitle: "Let&rsquo;s Begin"

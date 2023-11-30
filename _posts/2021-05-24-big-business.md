@@ -1,4 +1,5 @@
 ---
+category: Posts
 layout: post
 title: "Lifenotes 3"
 subtitle: "Big Business"
