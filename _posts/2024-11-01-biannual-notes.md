@@ -16,7 +16,7 @@ subtitle: "This is the best I can do, I guess"
   [Oddity](https://www.imdb.com/title/tt26470109/), and [The Autopsy of Jane
   Doe](https://www.imdb.com/title/tt3289956/).
 - Speaking of frightening... this damn election is in 4 days. Hold onto your butts...
-- Some schmucks stole our Prius's catalytic converter. We currently just share
+- Some schmucks stole our Prius's catalytic converter. We had been just sharing
   that one car, and I'm committed to fixing it myself, so we needed a
   functional set of wheels. I'd been wanting to acquire a Chevy Bolt for a
   while, so this gave me an excuse. So.. we now own a sweet-ass Chevy Bolt, and
