@@ -53,7 +53,7 @@ title: Posts
 
 {% assign post_count = site.posts | size %}
 {% if post_count > paginator.per_page %}
-  <div class="flex mt-8 items-center gap-5">
+  <div class="flex mt-8 justify-center items-center gap-5">
     {% if paginator.previous_page %}
       <a class="text-blue-400 px-2 py-1 border rounded" href="{{ paginator.previous_page_path }}" class="previous">
         Previous
