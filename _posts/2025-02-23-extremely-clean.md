@@ -16,7 +16,7 @@ subtitle:
 - Went to a freshly constructed library near us just to get out of the house. I
   tinkered around with [Loco](https://loco.rs/) for a bit while there. 
 - More snow! I'm really just over it, man. 
-- I've been using *nix systems of some type or another since the aughts. And I
+- I've been using \*nix systems of some type or another since the aughts. And I
   *just* learned that you can do string substitution in parameter expansion. I
   used this the other day to rename a bunch of files. It looks like this:
   ```bash
