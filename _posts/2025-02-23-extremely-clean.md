@@ -28,7 +28,7 @@ subtitle:
   Very handy!
 - My relationship with the HelloChinese app has reached the state where it's comfortable straight lying to me:
   <img class="mx-auto" src="/assets/images/articles/hello-chinese-clean-new-york.png" width=200 />
-- Important reminder: Pancake Day is Tuesday. Don't forget to... well, you know the drill.
+- Important reminder: 🗓️Pancake Day is Tuesday. Don't forget to... well, you know the drill 🥞
 - Finally paid my dues for Jess's 2024 MotoGP Video Game championship dinner +
   drinks deal. He doesn't read this blog, so I can be honest: he whipped my ass
   this year. If you are reading this, Jess: fuck you. 
