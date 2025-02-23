@@ -18,13 +18,22 @@
     <header class="bg-teal-700 px-5 py-3 font-sans text-teal-50 dark:text-gray-200 text-center">
       <h1 class="text-2xl font-extrabold"><a href="/">lee.ourand.me</a></h1>
       <nav class="font-semibold">
-        <a class="bg-teal-200 px-1 py rounded text-teal-600" href="/">Home</a>
         <a class="bg-teal-200 px-1 py rounded text-teal-600" rel="me" href="https://social.ourand.me/@lee">Mastodon</a>
         <a class="bg-teal-200 px-1 py rounded text-teal-600" href="https://github.com/leeourand">Github</a>
         <a class="bg-teal-200 px-1 py rounded text-teal-600" href="/feed.xml">RSS</a>
       </nav>
     </header>
     <div class="container max-w-3xl sm:mx-auto sm:my-6">
+      <nav class="font-semibold text-right mx-auto">
+        {% for link in site.navigation %}
+        {% assign current = nil %}
+        {% if page.url == link.url or page.layout == link.layout %}
+        {% assign current = 'bg-yellow-200' %}
+        {% endif %}
+        <a class="{{ current }} px-2 py-1 rounded text-yellow-600" href="{{ link.url }}">{{link.text}}</a>
+        {% endfor %}
+
+      </nav>
       <article class="bg-white rounded-lg dark:bg-gray-700 border-2 p-2 sm:p-5 border-gray-200 dark:border-gray-600 mt-3 sm:w-auto">
         {{ content }}
       </article>

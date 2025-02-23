@@ -4,3 +4,12 @@ permalink: /:categories/:year/:month/:day/:title
 plugins:
 - jekyll-feed
 - jekyll-paginate
+navigation:
+  - text: All
+    url: "/"
+  - text: Posts
+    url: "/posts"
+  - text: Toots
+    url: "/toots"
+  - text: Links
+    url: "/links"

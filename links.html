@@ -4,7 +4,6 @@ title: Links
 permalink: /links
 ---
 
-<h1 class="text-5xl">Links</h1>
 {% for post in site.categories.Links %}
   <section class="mb-12">
     <time class="bg-teal-100 dark:bg-teal-700 py px-2 rounded-md inline-block my-2 text-sm uppercase dark:text-teal-300 text-teal-700">{{ post.date | date: "%B %d %Y" }}</time>
@@ -28,24 +27,3 @@ permalink: /links
     </div>
   </section>
 {% endfor %}
-
-{% assign post_count = site.posts | size %}
-{% if post_count > paginator.per_page %}
-  <div class="flex mt-8 items-center gap-5">
-    {% if paginator.previous_page %}
-      <a class="text-blue-400 px-2 py-1 border rounded" href="{{ paginator.previous_page_path }}" class="previous">
-        Previous
-      </a>
-    {% else %}
-      <span class="text-gray-400 px-2 py-1 border rounded">Previous</span>
-    {% endif %}
-    <span class="text-sm text-gray-400 uppercase">
-      Page {{ paginator.page }} of {{ paginator.total_pages }}
-    </span>
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="text-blue-400 px-2 py-1 border rounded">Next</a>
-    {% else %}
-      <span class="text-gray-400 px-2 py-1 border rounded">Next</span>
-    {% endif %}
-  </div>
-{% endif %}
