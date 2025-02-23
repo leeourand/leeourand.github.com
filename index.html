@@ -6,44 +6,11 @@ title: Posts
 {% for post in paginator.posts %}
   <section class="mb-12">
     {% if post.category == "Links" %}
-      <time class="bg-teal-100 dark:bg-teal-700 py px-2 rounded-md inline-block my-2 text-sm uppercase dark:text-teal-300 text-teal-700">{{ post.date | date: "%B %d, %Y" }}</time>
-      <h2 class="text-3xl font-bold font-serif dark:text-gray-100">
-        <a class="hover:text-gray-500 dark:hover:text-gray-300" href="{{ post.link }}">{{ post.title }} </a>
-        <a class="text-xs uppercase text-gray-400 hover:text-teal-500 dark:text-gray-500" href="{{ post.url }}">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block -mt-3 w-5 h-5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
-          </svg>
-        </a>
-      </h2>
-      {% if post.subtitle %}
-        <h3 class="text-xl font-bold font-serif text-gray-600 dark:text-gray-400">{{ post.subtitle }}</h2>
-      {% endif %}
-      <div class="content dark:text-gray-300 prose prose-lg dark:prose-invert">
-        {{ post.content }}
-      </div>
+      {% include link.html %}
     {% elsif post.category == "Posts" %}
-      <time class="bg-teal-100 dark:bg-teal-700 py px-2 rounded-md inline-block my-2 text-sm uppercase dark:text-teal-300 text-teal-700">{{ post.date | date: "%B %d, %Y" }}</time>
-      <h2 class="text-3xl font-bold font-serif dark:text-gray-100">
-        <a class="hover:text-gray-500 dark:hover:text-gray-300" href="{{ post.url }}">{{ post.title }} </a>
-      </h2>
-      {% if post.subtitle %}
-        <h3 class="text-xl font-bold font-serif text-gray-600 dark:text-gray-400">{{ post.subtitle }}</h2>
-      {% endif %}
-      <div class="content dark:text-gray-300 prose prose-lg dark:prose-invert">
-        {{ post.content }}
-      </div>
+      {% include post.html %}
     {% elsif post.category == "Toots" %}
-    <section class="mx-auto mt-4 max-w-lg border border-gray-100 p-4 rounded shadow">
-      <div class="flex">
-        <img src="/assets/images/profile.jpeg" class="w-16 h-16 mr-2 shadow rounded-lg" />
-        <div class="text-lg text-gray-600 dark:text-gray-200">
-          {{ post.content }}
-        </div>
-      </div>
-      <time class="block text-sm dark:text-teal-300 text-teal-500 text-right">
-        <a href="{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a>
-      </time>
-    </section>
+      {% include toot.html %}
     {% else %}
       <h2 class="text-3xl font-bold font-serif dark:text-gray-100"><a class="hover:text-gray-500 dark:hover:text-gray-300" href="{{ post.url }}">{{ post.title }}</a></h2>
     {% endif %}

@@ -28,9 +28,9 @@
         {% for link in site.navigation %}
         {% assign current = nil %}
         {% if page.url == link.url or page.layout == link.layout %}
-        {% assign current = 'bg-yellow-200' %}
+        {% assign current = 'bg-yellow-200 dark:bg-gray-700' %}
         {% endif %}
-        <a class="{{ current }} px-2 py-1 rounded text-yellow-600" href="{{ link.url }}">{{link.text}}</a>
+        <a class="{{ current }} px-2 py-1 rounded text-gray-600 dark:text-gray-400" href="{{ link.url }}">{{link.text}}</a>
         {% endfor %}
 
       </nav>
