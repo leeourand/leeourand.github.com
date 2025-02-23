@@ -23,8 +23,8 @@
         <a class="bg-teal-200 px-1 py rounded text-teal-600" href="/feed.xml">RSS</a>
       </nav>
     </header>
-    <div class="container max-w-3xl sm:mx-auto sm:my-6">
-      <nav class="font-semibold text-right mx-auto">
+    <div class="container max-w-3xl sm:mx-auto">
+      <nav class="font-semibold mx-auto my-2 flex justify-end">
         {% for link in site.navigation %}
         {% assign current = nil %}
         {% if page.url == link.url or page.layout == link.layout %}
