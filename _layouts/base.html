@@ -28,13 +28,13 @@
         {% for link in site.navigation %}
         {% assign current = nil %}
         {% if page.url == link.url or page.layout == link.layout %}
-        {% assign current = 'bg-yellow-200 dark:bg-gray-700' %}
+        {% assign current = 'bg-yellow-200 dark:bg-violet-800 dark:!text-gray-300' %}
         {% endif %}
         <a class="{{ current }} px-2 py-1 rounded text-gray-600 dark:text-gray-400" href="{{ link.url }}">{{link.text}}</a>
         {% endfor %}
 
       </nav>
-      <article class="bg-white rounded-lg dark:bg-gray-700 border-2 p-2 sm:p-5 border-gray-200 dark:border-gray-600 mt-3 sm:w-auto">
+      <article class="bg-white rounded-lg dark:bg-gray-700 border-2 p-2 sm:p-5 border-gray-200 dark:border-gray-600 sm:w-auto">
         {{ content }}
       </article>
     </div>
