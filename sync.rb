@@ -5,8 +5,13 @@ require 'mastodon'
 require 'pry'
 
 class Post
-  def self.latest = new(Dir['_posts/*'].last)
-  def initialize(filename) = @filename = filename
+  def self.latest
+    new(Dir['_posts/*'].sort.last)
+  end
+
+  def initialize(filename)
+    @filename = filename
+  end
 
   def toot?
     front_matter = YAML.load_file(filename)
