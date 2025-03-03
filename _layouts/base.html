@@ -3,13 +3,12 @@
   <head>
     <title>lee.ourand.me: {{ page.title }}</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <meta name="theme-color" content="#047857">
     <link href="/assets/stylesheets/style.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <link rel="alternate" type="application/atom+xml" title="lee.ourand.me" href="/feed.xml">
-
-    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-    <meta name="theme-color" content="#297F77">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -32,7 +31,6 @@
         {% endif %}
         <a class="{{ current }} px-2 py-1 rounded text-gray-600 dark:text-gray-400" href="{{ link.url }}">{{link.text}}</a>
         {% endfor %}
-
       </nav>
       <article class="bg-white rounded-lg dark:bg-gray-700 border-2 p-2 sm:p-5 border-gray-200 dark:border-gray-600 sm:w-auto">
         {{ content }}
