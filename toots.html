@@ -5,5 +5,7 @@ permalink: /toots
 ---
 
 {% for post in site.categories.Toots %}
-  {% include toot.html %}
+  <section class="mb-8">
+    {% include toot.html %}
+  </section>
 {% endfor %}

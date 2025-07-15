@@ -1,11 +1,16 @@
-<section class="bg-emerald-50 mx-auto mt-4 max-w-lg border border-emerald-100 dark:bg-gray-800 dark:border-gray-500 p-4 rounded shadow">
+<div class="flex items-center gap-2 mb-3 badge-container">
+  <span class="bg-green-100 text-green-700 dark:bg-green-800 dark:text-green-200 px-2 py-1 rounded-full text-xs font-semibold uppercase tracking-wider content-type-badge">
+    💬 Toot
+  </span>
+</div>
+<section class="bg-emerald-50 mx-auto max-w-lg toot-mobile border border-emerald-100 dark:bg-gray-800 dark:border-gray-500 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
   <div class="flex">
-    <img src="/assets/images/profile.jpeg" class="w-16 h-16 mr-2 shadow border border-gray-400 rounded-lg" />
-    <div class="text-gray-600 dark:text-gray-200">
+    <img src="/assets/images/profile.jpeg" class="w-16 h-16 mr-3 shadow border border-gray-400 rounded-lg" />
+    <div class="text-gray-600 dark:text-gray-200 flex-1">
       {{ post.content }}
     </div>
   </div>
-  <time class="block text-sm dark:text-emerald-300 text-emerald-500 text-right">
-    <a href="{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a>
+  <time class="block text-sm dark:text-emerald-300 text-emerald-500 text-right mt-3">
+    <a href="{{ post.url }}" class="hover:text-emerald-600 dark:hover:text-emerald-200 transition-colors duration-200">{{ post.date | date: "%B %d, %Y" }}</a>
   </time>
 </section>

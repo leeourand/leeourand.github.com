@@ -79,3 +79,139 @@ $tmc_nt: rgb(48,48,255);
 .highlight .vi    { color: $tmc_c } /* Name.Variable.Instance */
 .highlight .il    { color: #009999 } /* Literal.Number.Integer.Long */
 span:target { background: rgba(255, 255, 0, 0.2) }
+
+/* Enhanced image styling */
+.content img {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin: 1.5rem 0;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.content img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Enhanced link styling */
+.content a {
+  color: #3b82f6;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.content a:hover {
+  color: #1d4ed8;
+  border-bottom-color: #3b82f6;
+}
+
+/* Dark mode link styling */
+.dark .content a {
+  color: #60a5fa;
+}
+
+.dark .content a:hover {
+  color: #93c5fd;
+  border-bottom-color: #60a5fa;
+}
+
+/* External link styling */
+.external-link {
+  position: relative;
+}
+
+.external-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #3b82f6, #10b981);
+  transition: width 0.3s ease-in-out;
+}
+
+.external-link:hover::after {
+  width: 100%;
+}
+
+/* Enhanced blockquote styling */
+.content blockquote {
+  border-left: 4px solid #10b981;
+  background: rgba(16, 185, 129, 0.05);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+  position: relative;
+}
+
+.dark .content blockquote {
+  background: rgba(16, 185, 129, 0.1);
+  border-left-color: #34d399;
+}
+
+/* Enhanced code block styling */
+.content pre {
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  overflow-x: auto;
+}
+
+.dark .content pre {
+  border-color: #4b5563;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Subtle background texture */
+body {
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(0,0,0,0.08) 1px, transparent 0);
+  background-size: 15px 15px;
+}
+
+.dark body {
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.05) 1px, transparent 0);
+  background-size: 15px 15px;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  /* Smaller content type badges on mobile */
+  .content-type-badge {
+    font-size: 0.625rem;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  /* Stack badges and timestamp on mobile for better readability */
+  .badge-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  /* Better navigation spacing on mobile */
+  nav a {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+  }
+  
+  /* Smaller post titles on mobile */
+  .mobile-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  /* Adjust toot layout on mobile */
+  .toot-mobile {
+    max-width: 100%;
+    margin: 0;
+  }
+}
