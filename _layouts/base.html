@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
   </head>
-  <body class="bg-yellow-50 dark:bg-gray-900">
+  <body>
     <script>
       // Dark mode detection based on user preference
       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -28,25 +28,25 @@
         }
       });
     </script>
-    <header class="bg-emerald-700 px-5 py-3 font-sans text-emerald-50 dark:text-gray-200 text-center">
-      <h1 class="text-2xl font-extrabold"><a href="/">lee.ourand.me</a></h1>
-      <nav class="font-semibold">
-        <a class="bg-emerald-200 px-1 py rounded text-emerald-600" rel="me" href="https://social.ourand.me/@lee">Mastodon</a>
-        <a class="bg-emerald-200 px-1 py rounded text-emerald-600" href="https://github.com/leeourand">Github</a>
-        <a class="bg-emerald-200 px-1 py rounded text-emerald-600" href="/feed.xml">RSS</a>
+    <header class="site-header">
+      <h1 class="site-header__title"><a href="/">lee.ourand.me</a></h1>
+      <nav class="site-header__nav">
+        <a rel="me" href="https://social.ourand.me/@lee">Mastodon</a>
+        <a href="https://github.com/leeourand">Github</a>
+        <a href="/feed.xml">RSS</a>
       </nav>
     </header>
-    <div class="container max-w-3xl sm:mx-auto">
-      <nav class="font-semibold mx-auto my-2 flex justify-end">
+    <div class="container max-w-3xl mx-auto">
+      <nav class="main-nav my-2">
         {% for link in site.navigation %}
         {% assign current = nil %}
         {% if page.url == link.url or page.layout == link.layout %}
-        {% assign current = 'bg-yellow-200 dark:bg-violet-800 dark:!text-gray-300' %}
+        {% assign current = 'main-nav__link--active' %}
         {% endif %}
-        <a class="{{ current }} px-2 py-1 rounded text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200" href="{{ link.url }}">{{link.text}}</a>
+        <a class="main-nav__link {{ current }}" href="{{ link.url }}">{{link.text}}</a>
         {% endfor %}
       </nav>
-      <article class="bg-white rounded-lg dark:bg-gray-700 border-2 p-2 sm:p-5 border-gray-200 dark:border-gray-600 sm:w-auto">
+      <article class="article-container">
         {{ content }}
       </article>
     </div>

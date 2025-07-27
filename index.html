@@ -4,40 +4,40 @@ title: Posts
 ---
 
 {% for post in paginator.posts %}
-  <section class="mb-16 pb-8 {% unless forloop.last %}border-b border-gray-200 dark:border-gray-600{% endunless %}">
-    {% if post.category == "Links" %}
-      {% include link.html %}
-    {% elsif post.category == "Posts" %}
-      {% include post.html %}
-    {% elsif post.category == "Toots" %}
-      {% include toot.html %}
-    {% else %}
-      <h2 class="text-4xl font-bold font-serif dark:text-gray-100 mb-4"><a class="hover:text-gray-500 dark:hover:text-gray-300 transition-colors duration-200" href="{{ post.url }}">{{ post.title }}</a></h2>
-    {% endif %}
-  </section>
+  {% if post.category == "Links" %}
+    {% include link.html %}
+  {% elsif post.category == "Posts" %}
+    {% include post.html %}
+  {% elsif post.category == "Toots" %}
+    {% include toot.html %}
+  {% else %}
+    <div class="post">
+      <h2 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    </div>
+  {% endif %}
 {% endfor %}
 
 {% assign post_count = site.posts | size %}
 {% if post_count > paginator.per_page %}
-  <div class="flex mt-8 justify-center items-center gap-3">
+  <div class="pagination">
     {% if paginator.previous_page %}
-      <a class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 shadow-sm" href="{{ paginator.previous_page_path }}">
+      <a class="pagination__link" href="{{ paginator.previous_page_path }}">
         ← Previous
       </a>
     {% else %}
-      <span class="bg-gray-200 dark:bg-gray-600 text-gray-400 dark:text-gray-500 px-4 py-2 rounded-lg font-medium cursor-not-allowed">
+      <span class="pagination__link pagination__link--disabled">
         ← Previous
       </span>
     {% endif %}
-    <span class="bg-gray-100 dark:bg-gray-600 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg text-sm font-medium">
+    <span class="pagination__info">
       Page {{ paginator.page }} of {{ paginator.total_pages }}
     </span>
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 shadow-sm">
+      <a href="{{ paginator.next_page_path }}" class="pagination__link">
         Next →
       </a>
     {% else %}
-      <span class="bg-gray-200 dark:bg-gray-600 text-gray-400 dark:text-gray-500 px-4 py-2 rounded-lg font-medium cursor-not-allowed">
+      <span class="pagination__link pagination__link--disabled">
         Next →
       </span>
     {% endif %}
