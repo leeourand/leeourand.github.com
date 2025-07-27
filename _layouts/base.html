@@ -7,13 +7,27 @@
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
     <meta name="theme-color" content="#047857">
     <link href="/assets/stylesheets/style.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <link rel="alternate" type="application/atom+xml" title="lee.ourand.me" href="/feed.xml">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
   </head>
   <body class="bg-yellow-50 dark:bg-gray-900">
+    <script>
+      // Dark mode detection based on user preference
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+      }
+      
+      // Listen for changes in color scheme preference
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        if (e.matches) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      });
+    </script>
     <header class="bg-emerald-700 px-5 py-3 font-sans text-emerald-50 dark:text-gray-200 text-center">
       <h1 class="text-2xl font-extrabold"><a href="/">lee.ourand.me</a></h1>
       <nav class="font-semibold">
