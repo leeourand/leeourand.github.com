@@ -16,12 +16,12 @@ subtitle: "This is the best I can do, I guess"
   [Oddity](https://www.imdb.com/title/tt26470109/), and [The Autopsy of Jane
   Doe](https://www.imdb.com/title/tt3289956/).
 - Speaking of frightening... this damn election is in 4 days. Hold onto your butts...
-- Some schmucks stole our Prius's catalytic converter. We had been just sharing
+- <span id="catalytic-converter-theft">Some schmucks stole our Prius's catalytic converter. We had been just sharing
   that one car, and I'm committed to fixing it myself, so we needed a
   functional set of wheels. I'd been wanting to acquire a Chevy Bolt for a
   while, so this gave me an excuse. So.. we now own a sweet-ass Chevy Bolt, and
-  I could'nt be happier with the thing. It's a massive upgrade over the Prius,
-  plus there's no risk of catalytic converter theft!
+  I couldn't be happier with the thing. It's a massive upgrade over the Prius,
+  plus there's no risk of catalytic converter theft!</span>
 - Jess and I ran in a goofy Halloween 10 Mile race on the Capital Trail last
   week. I'm still recovering from a rough go of bronchitis, so it was a slow
   one. But one of those "in hindsight it was fun" things.
